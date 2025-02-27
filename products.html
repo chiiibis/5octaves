@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Octaves - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script>
+        // Function to toggle between images
+        function toggleImage(productId, primarySrc, secondarySrc) {
+            let imgElement = document.getElementById(productId);
+            if (imgElement.src.includes(primarySrc)) {
+                imgElement.src = secondarySrc;
+            } else {
+                imgElement.src = primarySrc;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="Romero_ex4.html">🎵 5 Octaves</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="Romero_ex4.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-music"></i> Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="about.html"><i class="fas fa-guitar"></i> About Us</a></li>
+                        <li><a class="dropdown-item" href="products.html"><i class="fas fa-guitar"></i> Products</a></li>
+                        <li><a class="dropdown-item" href="gallery.html"><i class="fas fa-image"></i> Gallery</a></li>
+                        <li><a class="dropdown-item" href="testimonials.html"><i class="fas fa-comment"></i> Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<br><br>
+
+<main class="container my-5 fade-in">
+    <h2>Our Collections</h2>
+    <p>We offer a variety of high-quality musical instruments designed for different skill levels and music styles. Whether you're a beginner, an experienced musician, or a professional performer, our collection ensures you find the perfect instrument to match your passion.</p>
+
+    <section class="container my-5 fade-in">
+        <h2>Why Choose 5 Octaves?</h2>
+        <p>At 5 Octaves, we are committed to providing musicians with the finest instruments, offering superior craftsmanship, exceptional sound, and outstanding service.</p>
+
+        <h3>🎸 Premium Quality Instruments</h3>
+        <p>Our selection of instruments is carefully chosen from top brands, ensuring durability and performance excellence.</p>
+
+        <h3>🎹 Wide Variety of Options</h3>
+        <p>From acoustic and electric guitars to grand and digital pianos, electronic drum kits to orchestral violins, we have something for every musician.</p>
+
+        <h3>🎶 Exceptional Customer Service</h3>
+        <p>Our dedicated team of experts is here to help you choose the right instrument and provide after-sales support.</p>
+    </section>
+
+<!-- Table Section -->
+<section class="container my-5 fade-in">
+    <h2>Instrument Price Comparison</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Instrument</th>
+                <th>Price Range</th>
+                <th>Best For</th>
+            </tr>
+        </thead>
+        <tbody>
+	    <tr>
+                <td>Acoustic Guitar</td>
+                <td>₱11,000 - ₱82,500</td>
+                <td>Beginners & Professionals</td>
+            </tr>
+            <tr>
+                <td>Electric Guitar</td>
+                <td>₱16,500 - ₱165,000	</td>
+                <td>Rock, Jazz, Metal</td>
+            </tr>
+            <tr>
+                <td>Digital Piano</td>
+                <td>₱27,500 - ₱192,500</td>
+                <td>Classical & Contemporary</td>
+            </tr>
+            <tr>
+                <td>Grand Piano</td>
+                <td>₱275,000 - ₱2,750,000</td>
+                <td>Concert Performances</td>
+            </tr>
+            <tr>
+                <td>Electronic Drums</td>
+                <td>₱33,000 - ₱220,000</td>
+                <td>Recording & Live Performances</td>
+            </tr>
+            <tr>
+                <td>Acoustic Drums</td>
+                <td>₱38,500 - ₱275,000</td>
+                <td>Live & Studio Sessions</td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section class="container mt-5">
+        <h1 class="text-center">Our Collections</h1><br>
+        <div class="row">
+            <!-- Acoustic Guitar -->
+            <div class="col-md-4">
+                <h2>Acoustic Guitar</h2>
+                <div id="carouselAcousticGuitar" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.sweelee.ph/cdn/shop/files/products_2FF03-097-1913-032_2FF03-097-1913-032_1719214185720.jpg?v=1721184241&width=2048" data-lightbox="acoustic-guitar">
+                                <img src="https://www.sweelee.ph/cdn/shop/files/products_2FF03-097-1913-032_2FF03-097-1913-032_1719214185720.jpg?v=1721184241&width=2048" class="d-block w-100" alt="Acoustic Guitar Image 1">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://lazermusic.com.ph/cdn/shop/products/1_b329c71c-1be4-461d-a275-e6deb0876226.png?v=1619422990" data-lightbox="acoustic-guitar">
+                                <img src="https://lazermusic.com.ph/cdn/shop/products/1_b329c71c-1be4-461d-a275-e6deb0876226.png?v=1619422990" class="d-block w-100" alt="Acoustic Guitar Image 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.yupangco.com/storage/product-photos/KFb7xfO0BrU6Saiw5xECrAmfoZsNq3SbVT24RE2Q.jpeg" data-lightbox="acoustic-guitar">
+                                <img src="https://www.yupangco.com/storage/product-photos/KFb7xfO0BrU6Saiw5xECrAmfoZsNq3SbVT24RE2Q.jpeg" class="d-block w-100" alt="Acoustic Guitar Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAcousticGuitar" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAcousticGuitar" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+           <!-- Acoustic Drums -->
+		<div class="col-md-4">
+		    <h2>Acoustic Drums</h2>
+		    <div id="carouselAcousticDrums" class="carousel slide" data-bs-ride="carousel">
+		        <div class="carousel-inner">
+		            <div class="carousel-item active">
+                		<a href="https://m.media-amazon.com/images/I/71QHZxkgvPL._AC_SL1500_.jpg" data-lightbox="acoustic-drums">
+	                        <img src="https://m.media-amazon.com/images/I/71QHZxkgvPL._AC_SL1500_.jpg" class="d-block w-100" alt="Acoustic Drums Image 1"></a>
+	        </div>
+              <div class="carousel-item">
+                   <a href="https://www.yupangco.com/storage/product-photos/rydeenmellowyellow.jpg" data-lightbox="acoustic-drums">
+                   <img src="https://www.yupangco.com/storage/product-photos/rydeenmellowyellow.jpg" class="d-block w-100" alt="Acoustic Drums Image 2"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://images-cdn.ubuy.co.in/63e01bb5656ad30956679513-pearl-export-exx-8-piece-double-bass.jpg" data-lightbox="acoustic-drums">
+                    <img src="https://images-cdn.ubuy.co.in/63e01bb5656ad30956679513-pearl-export-exx-8-piece-double-bass.jpg" class="d-block w-100" alt="Acoustic Drums Image 3"></a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAcousticDrums" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAcousticDrums" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+
+            <!-- Grand Piano -->
+            <div class="col-md-4">
+                <h2>Grand Piano</h2>
+                <div id="carouselGrandPiano" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://pianopiano.com/wp-content/uploads/2016/04/yamaha-5-3-baby-grand-piano.jpg" data-lightbox="grand-piano">
+                                <img src="https://pianopiano.com/wp-content/uploads/2016/04/yamaha-5-3-baby-grand-piano.jpg" class="d-block w-100" alt="Grand Piano Image 1">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://shop.steinway-boutique.com.ph/cdn/shop/products/ProductPhotoS155.jpg?v=1633402884" data-lightbox="grand-piano">
+                                <img src="https://shop.steinway-boutique.com.ph/cdn/shop/products/ProductPhotoS155.jpg?v=1633402884" class="d-block w-100" alt="Grand Piano Image 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.kawaipianoshouston.com/wp-content/uploads/2019/05/Shigeru-Kawai-SK-EX-Grand-Piano.jpg" data-lightbox="grand-piano">
+                                <img src="https://www.kawaipianoshouston.com/wp-content/uploads/2019/05/Shigeru-Kawai-SK-EX-Grand-Piano.jpg" class="d-block w-100" alt="Grand Piano Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGrandPiano" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGrandPiano" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="container mt-5">
+        <div class="row">
+            <!-- Electric Guitar -->
+            <div class="col-md-4">
+                <h2>Electric Guitar</h2>
+                <div id="carouselElectricGuitar" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://ddmusic.ph/wp-content/uploads/2020/09/ASPIRE-ELECTRIC-GUITAR-ST-103E-BLACK.jpg" data-lightbox="electric-guitar">
+                                <img src="https://ddmusic.ph/wp-content/uploads/2020/09/ASPIRE-ELECTRIC-GUITAR-ST-103E-BLACK.jpg" class="d-block w-100" alt="Electric Guitar Image 1">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.jbmusic.com.ph/__resources/webdata/images/products/6178.jpg" data-lightbox="electric-guitar">
+                                <img src="https://www.jbmusic.com.ph/__resources/webdata/images/products/6178.jpg" class="d-block w-100" alt="Electric Guitar Image 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://musicredone.com/cdn/shop/products/12_720733d7-4561-4cf6-a7f8-3eb40d08c2b4.jpg?v=1606838288" data-lightbox="electric-guitar">
+                                <img src="https://musicredone.com/cdn/shop/products/12_720733d7-4561-4cf6-a7f8-3eb40d08c2b4.jpg?v=1606838288" class="d-block w-100" alt="Electric Guitar Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselElectricGuitar" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselElectricGuitar" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Electric Drums -->
+            <div class="col-md-4">
+                <h2>Electric Drums</h2>
+                <div id="carouselElectricDrums" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.jbmusic.com.ph/__resources/webdata/images/products/6224.jpg" data-lightbox="electric-drums">
+                                <img src="https://www.jbmusic.com.ph/__resources/webdata/images/products/6224.jpg" class="d-block w-100" alt="Electric Drums Image 1">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://jollymusic.com.ph/cdn/shop/products/AROMA-TDX-25II-04.jpg?v=1690000889&width=1946" data-lightbox="electric-drums">
+                                <img src="https://jollymusic.com.ph/cdn/shop/products/AROMA-TDX-25II-04.jpg?v=1690000889&width=1946" class="d-block w-100" alt="Electric Drums Image 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://vintageking.com/media/catalog/product/r/o/roland-td716-v-drums-electronic-drum-kit-24_463684_1.jpg" data-lightbox="electric-drums">
+                                <img src="https://vintageking.com/media/catalog/product/r/o/roland-td716-v-drums-electronic-drum-kit-24_463684_1.jpg" class="d-block w-100" alt="Electric Drums Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselElectricDrums" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselElectricDrums" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Digital Piano -->
+            <div class="col-md-4">
+                <h2>Digital Piano</h2>
+                <div id="carouselDigitalPiano" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://crescendo.com.ph/cdn/shop/files/AP-270BK_3_2048x.jpg?v=1698107739" data-lightbox="digital-piano">
+                                <img src="https://crescendo.com.ph/cdn/shop/files/AP-270BK_3_2048x.jpg?v=1698107739" class="d-block w-100" alt="Digital Piano Image 1">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.jbmusic.com.ph/__resources/webdata/images/products/2157.jpg" data-lightbox="digital-piano">
+                                <img src="https://www.jbmusic.com.ph/__resources/webdata/images/products/2157.jpg" class="d-block w-100" alt="Digital Piano Image 2">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://stevesmusic.com/cdn/shop/files/20655.jpg?v=1712302574&width=1000" data-lightbox="digital-piano">
+                                <img src="https://stevesmusic.com/cdn/shop/files/20655.jpg?v=1712302574&width=1000" class="d-block w-100" alt="Digital Piano Image 3">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDigitalPiano" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDigitalPiano" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+	    <section class="container mt-5">
+    <h1 class="text-center">And More! Contact Us for more information and inquiries!</h1>
+    <div class="row text-center">
+        <a href="contact.html" class="btn btn-primary mt-3">Contact Us</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="text-center">
+    <p>&copy; 2025 5 Octaves. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
